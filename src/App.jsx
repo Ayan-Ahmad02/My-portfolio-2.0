@@ -1034,6 +1034,69 @@ function About() {
         </motion.div>
 
         <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} style={{ display: 'grid', gap: 24 }}>
+          {/* Licenses & Certifications Section */}
+          <div className="glass-card">
+            <h3 style={{ fontSize: 20, fontWeight: 700, marginBottom: 20, display: 'flex', alignItems: 'center', gap: 10 }}>📜 Licenses & Certifications</h3>
+            <div style={{ display: 'grid', gap: 20 }}>
+              {/* Deloitte Certification */}
+              <div style={{ display: 'flex', gap: 15, alignItems: 'flex-start', padding: '15px', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                <div style={{ fontSize: '24px', background: 'rgba(6, 182, 212, 0.1)', padding: '10px', borderRadius: '10px' }}>🏢</div>
+                <div>
+                  <h4 style={{ fontSize: '16px', margin: '0 0 4px 0', color: 'white' }}>Deloitte Australia Technology Job Simulation</h4>
+                  <p style={{ fontSize: '13px', color: '#94a3b8', margin: '0 0 8px 0' }}>Forage • Issued Oct 2025 • ID: xXhptrg5gG6G6oapP</p>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: '0 0 10px 0', lineHeight: '1.4' }}>
+                    Hands-on experience in Python, software development, and data analysis. Created a client dashboard proposal.
+                  </p>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 12 }}>
+                    {["Python", "Software Development", "Data Analysis"].map(s => (
+                      <span key={s} style={{ fontSize: '10px', padding: '2px 8px', background: 'rgba(6, 182, 212, 0.05)', color: '#06b6d4', borderRadius: '4px', border: '1px solid rgba(6, 182, 212, 0.1)' }}>{s}</span>
+                    ))}
+                  </div>
+                  <a href="src/images/certificates/Deolite.png" target="_blank" className="btn-hover" style={{ fontSize: '12px', color: '#06b6d4', textDecoration: 'none', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                    <span>View Certificate</span> ↗
+                  </a>
+                </div>
+              </div>
+
+              {/* Internship Studio */}
+              <div style={{ display: 'flex', gap: 15, alignItems: 'flex-start', padding: '15px', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                <div style={{ fontSize: '24px', background: 'rgba(124, 58, 237, 0.1)', padding: '10px', borderRadius: '10px' }}>🎓</div>
+                <div>
+                  <h4 style={{ fontSize: '16px', margin: '0 0 4px 0', color: 'white' }}>Internship Studio Program</h4>
+                  <p style={{ fontSize: '13px', color: '#94a3b8', margin: '0 0 10px 0' }}>Internship Studio • Issued Feb 2025 • ID: CIT-P-1383105</p>
+                  <a href="src/images/certificates/Internshipstudio.png" target="_blank" className="btn-hover" style={{ fontSize: '12px', color: '#06b6d4', textDecoration: 'none', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                    <span>View Certificate</span> ↗
+                  </a>
+                </div>
+              </div>
+
+              {/* IIVET India */}
+              <div style={{ display: 'flex', gap: 15, alignItems: 'flex-start', padding: '15px', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                <div style={{ fontSize: '24px', background: 'rgba(6, 182, 212, 0.1)', padding: '10px', borderRadius: '10px' }}>🏫</div>
+                <div>
+                  <h4 style={{ fontSize: '16px', margin: '0 0 4px 0', color: 'white' }}>IIVET Educational Group Certification</h4>
+                  <p style={{ fontSize: '13px', color: '#94a3b8', margin: '0 0 8px 0' }}>IIVET India • Issued Jun 2023</p>
+                  <p style={{ fontSize: '13px', color: '#64748b', margin: '0 0 10px 0' }}>Skills: Microsoft PowerPoint, Excel, and Office Suite.</p>
+                  <a href="src/images/certificates/IIVET.png" target="_blank" className="btn-hover" style={{ fontSize: '12px', color: '#06b6d4', textDecoration: 'none', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                    <span>View Certificate</span> ↗
+                  </a>
+                </div>
+              </div>
+
+              {/* ADCA Diploma */}
+              <div style={{ display: 'flex', gap: 15, alignItems: 'flex-start', padding: '15px', background: 'linear-gradient(135deg, rgba(6, 182, 212, 0.05), rgba(124, 58, 237, 0.05))', borderRadius: '12px', border: '1px solid rgba(6, 182, 212, 0.1)' }}>
+                <div style={{ fontSize: '24px', background: 'rgba(6, 182, 212, 0.2)', padding: '10px', borderRadius: '10px' }}>🏆</div>
+                <div>
+                  <h4 style={{ fontSize: '16px', margin: '0 0 4px 0', color: 'white' }}>ADCA (Advance Diploma in Computer Application)</h4>
+                  <p style={{ fontSize: '13px', color: '#06b6d4', margin: '0 0 10px 0', fontWeight: 600 }}>Completed In 2025</p>
+                  <a href="src/images/certificates/ADCA_certificate.pdf" target="_blank" className="btn-hover" style={{ fontSize: '12px', color: '#06b6d4', textDecoration: 'none', fontWeight: 600, display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                    <span>View Certificate</span> ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="glass-card">
             <h3 style={{ fontSize: 20, fontWeight: 700, marginBottom: 16, display: 'flex', alignItems: 'center', gap: 10 }}>🚀 What I Do</h3>
             <ul style={{ color: '#94a3b8', margin: 0, paddingLeft: 20, display: 'grid', gap: 10 }}>
