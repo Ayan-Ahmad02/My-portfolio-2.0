@@ -1,0 +1,189 @@
+/* 🌟 General Page Layout */
+.projects-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* 🌟 Project Grid */
+.grid-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* 🌟 Project Card */
+.project-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.2);
+}
+
+.project-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: #94a3b8;
+}
+
+/* 🌟 Skills Tags */
+.skills {
+  margin: 10px 0;
+}
+
+.skill-tag {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+/* 🌟 Project Links */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* 🌟 Buttons */
+.btn {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-github {
+  background-color: #333;
+}
+
+.btn-github:hover {
+  background-color: #000;
+}
+
+.btn-live {
+  background-color: #007bff;
+}
+
+.btn-live:hover {
+  background-color: #0056b3;
+}
+
+.btn-back {
+  background-color: #28a745;
+}
+
+.btn-back:hover {
+  background-color: #1e7e34;
+}
+
+/* 🌟 Back Button Container */
+.back-home {
+  margin-top: 30px;
+}
+
+/* 🌟 Fancy Info Box */
+.quick-info-box {
+  border: 2px solid transparent;
+  background-image: 
+    linear-gradient(180deg, #061428, #081226),
+    linear-gradient(90deg, #06b6d4, #3b82f6, #06b6d4);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quick-info-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
+}
+
+/* ✅ Responsive Styling */
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 1.4rem;
+  }
+
+  .project-card {
+    padding: 12px;
+  }
+
+  .btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .grid-projects {
+    grid-template-columns: 1fr; /* 1 column only */
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-desc {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .grid-projects {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+
+  .project-card {
+    padding: 18px;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+  }
+}
+
+/* iPad Pro & large tablets */
+@media (min-width: 901px) and (max-width: 1200px) {
+  .grid-projects {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1201px) {
+  .grid-projects {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  }
+}
