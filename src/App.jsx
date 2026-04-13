@@ -999,7 +999,7 @@ function About() {
           <div className="glass-card" style={{ padding: 30, textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
             <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '4px', background: 'linear-gradient(90deg, #06b6d4, #7c3aed)' }} />
             <img
-              src="src/image's/ayan.jpeg"
+              src="src/images/ayan.jpeg"
               alt="Ayan Ahmad"
               style={{
                 width: 200,
